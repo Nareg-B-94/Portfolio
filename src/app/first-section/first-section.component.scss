@@ -1,0 +1,24 @@
+.content{
+    color: white;
+    padding-top: 150px;
+    background-color: black;
+    height: calc(100vh - 150px) ;
+
+    button{
+        cursor: pointer;
+        text-align: center;
+        background-color: white;
+        color: #2dfcd8;
+        border: #2dfcd8;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+
+        &:hover {
+            color: white;
+            background-color: #2dfcd8;
+        }
+    }
+}
+
