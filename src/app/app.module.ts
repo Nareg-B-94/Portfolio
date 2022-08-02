@@ -9,10 +9,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FirstSectionComponent } from './first-section/first-section.component';
 import { SecondSectionComponent } from './second-section/second-section.component';
 import { ThirdSectionComponent } from './third-section/third-section.component';
+import { FourthSectionComponent } from './fourth-section/fourth-section.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FirstSectionComponent, SecondSectionComponent, ThirdSectionComponent],
+  declarations: [AppComponent, HeaderComponent, FirstSectionComponent, SecondSectionComponent, ThirdSectionComponent, FourthSectionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
