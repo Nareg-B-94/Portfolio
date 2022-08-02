@@ -7,10 +7,12 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FirstSectionComponent } from './first-section/first-section.component';
+import { SecondSectionComponent } from './second-section/second-section.component';
+import { ThirdSectionComponent } from './third-section/third-section.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FirstSectionComponent],
+  declarations: [AppComponent, HeaderComponent, FirstSectionComponent, SecondSectionComponent, ThirdSectionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

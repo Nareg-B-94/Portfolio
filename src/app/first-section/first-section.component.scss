@@ -1,24 +1,102 @@
-.content{
-    color: white;
-    padding-top: 150px;
-    background-color: black;
-    height: calc(100vh - 150px) ;
+.content {
+  font-family: "Alegreya" !important;
+  color: white;
+  padding-top: 150px;
+  background-color: black;
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    button{
-        cursor: pointer;
-        text-align: center;
-        background-color: white;
-        color: #2dfcd8;
-        border: #2dfcd8;
-        padding-top: 10px;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        padding-left: 30px;
+  button {
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    color: #2dfcd8;
+    border-color: #2dfcd8;
+    width: 300px;
+    height: 80px;
+    padding-top: 10px !important;
+    padding-right: 30px !important;
+    padding-bottom: 10px !important;
+    padding-left: 30px !important;
 
-        &:hover {
-            color: white;
-            background-color: #2dfcd8;
-        }
+    &:hover {
+      color: white;
+      background-color: #2dfcd8;
     }
+  }
 }
 
+.rightDiv {
+
+
+  background-image: url("/assets/img/Nareg Berberian.jpg");
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center top;
+}
+.leftDiv {
+  opacity: 0;
+  animation: myAnim 1s ease-in-out 1s 1 normal forwards;
+
+  @keyframes myAnim {
+	0% {
+
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+  h1 {
+    height: auto;
+
+    font-size: 64px;
+    font-family: "Alegreya" !important;
+  }
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: #fa2759;
+  }
+
+  button {
+    margin-top: 50px;
+  }
+}
+.arrowDiv {
+
+  img {
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 30px;
+    cursor: pointer;
+  }
+  &:hover {
+    animation: myAnim1 2s ease-in-out 0s infinite alternate forwards;
+
+    @keyframes myAnim1 {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+  }
+}

@@ -1,0 +1,92 @@
+.content {
+  padding-top: 120px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+    h2{
+        font-size: 36px;
+    }
+
+    .skillCards{
+        margin-top: 50px;
+        width: 800px;
+
+        .mainCard{
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+
+            &:hover {
+                animation: myAnim3 300ms ease-in-out 0s 1 alternate forwards;
+
+                @keyframes myAnim3 {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0);
+		transform: scale(1.35);
+	}
+}
+            }
+        }
+
+        .row{
+            margin-top: 50px;
+            justify-content: center ;
+            display: flex;
+            align-items: center;
+
+            .descprition{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                color: black;
+                margin: 20px;
+                height: 150px;
+                width: 220px;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+            .header{
+                top: -20px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                height: 30px;
+                width: 30px;
+                border-radius:100% ;
+                background-color: #ffffff;
+                padding: 20px;
+                box-shadow: 0px -1px 12px 17px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -1px 12px 17px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 12px 17px rgba(0,0,0,0.75);
+
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+
+    }
+
+
+
+
+    }
+
+//

@@ -1,4 +1,6 @@
 mat-toolbar {
+  z-index: 9999;
+font-family: Arima Madurai !important;
   background-color: rgba(0, 0, 0, 0.856);
   height: 120px;
   display: flex;
@@ -6,8 +8,8 @@ mat-toolbar {
   align-items: center;
   position: fixed;
   top: 0;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
   box-shadow: 1px 6px 67px 15px rgba(255,255,255,0.3);
 -webkit-box-shadow: 1px 6px 67px 15px rgba(255,255,255,0.3);
 -moz-box-shadow: 1px 6px 67px 15px rgba(255,255,255,0.3);
@@ -23,6 +25,7 @@ mat-toolbar {
 
   .links {
     button {
+      border: none;
       color: white;
       background: none;
       margin-left: 20px;

@@ -1,0 +1,47 @@
+.content {
+  color: white;
+  height: auto;
+  padding-top: 120px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .headline {
+    h2 {
+      font-size: 36px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectsDiv {
+    height: 300px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+
+    .projectWrapper {
+display: flex;
+      margin-top: 40px;
+      flex-direction: row !important;
+
+      img{
+            margin-right: 50px;
+            height: 200px;
+            width: 300px;
+        }
+    }
+
+    .projectDescription{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+}
