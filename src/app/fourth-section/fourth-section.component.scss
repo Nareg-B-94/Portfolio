@@ -1,0 +1,163 @@
+.content {
+    font-family: "Alegreya" !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  flex-direction: column;
+  h3{
+    font-family: "Alegreya" !important;
+  }
+
+  .upperSection {
+    max-width: 1150px;
+    padding-bottom: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    border-bottom: solid 1.2px #2dfcd8;
+
+    .leftDiv {
+      margin-right: 40px;
+      background-image: url("/assets/img/Nareg Berberian.jpg");
+      border-radius: 50%;
+      height: 200px;
+      width: 250px;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center top;
+    }
+
+    .rightDiv {
+      font-family: "Alegreya" !important;
+      text-align: center;
+      margin-left: 40px;
+      h2 {
+        font-family: "Alegreya" !important;
+        font-size: 36px;
+      }
+      span {
+        word-spacing: 5px;
+        font-family: "Alegreya" !important;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .lowerSection {
+    max-width: 1150px;
+    display: flex;
+    margin-top: 100px;
+
+    .journeyDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .iconDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: #2dfcd8;
+        border-radius: 100%;
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .descriptionDiv {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .firstExperienceDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .iconDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: #2dfcd8;
+        border-radius: 100%;
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .descriptionDiv {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .searchDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .iconDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: #2dfcd8;
+        border-radius: 100%;
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .descriptionDiv {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .challengesDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .iconDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: #2dfcd8;
+        border-radius: 100%;
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .descriptionDiv {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+  }
+}

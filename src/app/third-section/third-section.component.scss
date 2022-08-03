@@ -1,8 +1,9 @@
 .content {
     font-family: "Alegreya" !important;
   color: white;
-  height: auto;
+  min-height: 100vh;
   padding-top: 120px;
+  padding-bottom: 120px;
   background-color: black;
   display: flex;
   flex-direction: column;

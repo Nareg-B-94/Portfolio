@@ -1,0 +1,84 @@
+.content {
+  font-family: "Alegreya" !important;
+  color: white;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  .contactMe {
+    h2 {
+      font-family: "Alegreya" !important;
+      color: #2dfcd8;
+      font-size: 64px;
+      margin-bottom: 50px;
+    }
+    span {
+      font-family: "Alegreya" !important;
+      font-size: 20px;
+
+      a {
+        color: #1c9e88;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .formDiv {
+    width: 500px;
+    position: relative;
+    form {
+      margin-top: 50px;
+      display: flex !important;
+      flex-direction: column;
+
+      span {
+        margin-top: 30px;
+      }
+
+      input {
+        height: 30px;
+        border-radius: 5px;
+        font-family: "Alegreya" !important;
+        margin-top: 10px;
+        background-color: #1a1a1a;
+        border-color: #1c9e88;
+        color: white;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: end;
+      }
+    }
+    textarea {
+        border-radius: 5px;
+        border-color: #1c9e88;
+      font-family: "Alegreya" !important;
+      resize: none;
+      margin-top: 10px;
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    span {
+      margin-bottom: 10px;
+    }
+
+    button {
+      font-size: 20px;
+      font-family: "Alegreya" !important;
+      margin-top: 20px;
+      padding: 20px;
+      width: 150px !important;
+      background-color: black;
+      border-color: #2dfcd8 !important ;
+      color: #2dfcd8;
+      cursor: pointer;
+    }
+  }
+}
