@@ -40,4 +40,15 @@ font-family: "Alegreya" !important;
     padding-bottom: 20px;
     border-bottom: #fa2759 2px solid;
   }
+
+  @media (max-width:1000px) {
+    // display: flex;
+    // flex-direction: column-reverse !important;
+    // width: auto !important;
+  display: none !important;
+  height: unset !important;
+
+  }
 }
+
+

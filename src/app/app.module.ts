@@ -14,6 +14,7 @@ import { FifthSectionComponent } from './fifth-section/fifth-section.component';
 import { FooterComponent } from './footer/footer.component';
 
 
+
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FirstSectionComponent, SecondSectionComponent, ThirdSectionComponent, FourthSectionComponent, FifthSectionComponent, FooterComponent],
   imports: [

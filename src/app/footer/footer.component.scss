@@ -1,15 +1,65 @@
-.content{
-    font-size: 20px;
-    font-family: "Alegreya" !important;
-    height: 200px;
-    background-color: #474747;
+.content {
+  font-size: 20px;
+  font-family: "Alegreya" !important;
+  height: 200px;
+  background-color: #474747;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+
+  .leftDiv {
+    width: 250px;
     display: flex;
-    justify-content: space-around;
-    color: white;
+    justify-content: space-between;
+    .imprint {
+      cursor: pointer;
+
+    }
+    .legal {
+      cursor: pointer;
+    }
+  }
+
+  .rightDiv {
+    justify-content: center;
     align-items: center;
+    display: flex;
+    width: 250px;
 
-    .leftDiv{}
+    .github {
+      height: 80px;
+      width: 83.3px;
+      background-image: url("/assets/img/github-fill.png");
+      background-repeat: no-repeat;
+      background-position: center;
 
-    .rightDiv{}
-
+      &:hover{
+        background-color: #2dfcd8;
+        border-radius: 100%;
+      }
+    }
+    .linkedin {
+      height: 80px;
+      width: 83.3px;
+      background-image: url("/assets/img/linkedin-box-fill.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover{
+        background-color: #2dfcd8;
+        border-radius: 100%;
+      }
+    }
+    .xing {
+      height: 80px;
+      width: 83.3px;
+      background-image: url("/assets/img/xing-fill.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover{
+        background-color: #2dfcd8;
+        border-radius: 100%;
+      }
+    }
+  }
 }

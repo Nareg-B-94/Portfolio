@@ -79,6 +79,11 @@
       border-color: #2dfcd8 !important ;
       color: #2dfcd8;
       cursor: pointer;
+
+      &:hover {
+        background-color: #2dfcd8;
+        color: black;
+      }
     }
   }
 }

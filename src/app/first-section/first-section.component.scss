@@ -22,9 +22,15 @@
     padding-left: 30px !important;
 
     &:hover {
-      color: white;
+      color: black;
       background-color: #2dfcd8;
     }
+  }
+
+  @media (max-width:1000px) {
+    display: flex;
+    flex-direction: column-reverse !important;
+    width: 100vw;
   }
 }
 
@@ -105,4 +111,6 @@
 	}
 }
   }
+
+
 }
