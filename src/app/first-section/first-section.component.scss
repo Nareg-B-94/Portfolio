@@ -1,4 +1,5 @@
 .content {
+  overflow-x: hidden;
   font-family: "Alegreya" !important;
   color: white;
   padding-top: 150px;
@@ -128,6 +129,7 @@
     display: flex;
     flex-direction: column !important;
     .rightDiv {
+      flex: none !important;
       height: 250px !important;
       width: 250px !important;
     }

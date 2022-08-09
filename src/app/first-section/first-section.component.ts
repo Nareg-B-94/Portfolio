@@ -11,7 +11,19 @@ export class FirstSectionComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  goTo5thSection() {
-    this.router.navigate(['/#fifthSection']);
+  // goTo5thSection() {
+  //   scrollIntoView({
+  //     behavior: 'smooth',
+  //     block: 'start',
+  //     inline: 'nearest',
+  //   });
+  // }
+
+  scrollToElement(){
+document.getElementById('fifthSection').scrollIntoView({
+  behavior: 'smooth',
+  block: 'start',
+  inline: 'nearest',
+});
   }
 }
