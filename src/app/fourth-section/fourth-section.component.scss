@@ -1,5 +1,5 @@
 .content {
-    font-family: "Alegreya" !important;
+  font-family: "Alegreya" !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,7 @@
   background-color: #1a1a1a;
   color: #ffffff;
   flex-direction: column;
-  h3{
+  h3 {
     font-family: "Alegreya" !important;
   }
 
@@ -55,8 +55,8 @@
     margin-top: 100px;
 
     .journeyDiv {
-        margin-left: 10px;
-        margin-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -81,8 +81,8 @@
       }
     }
     .firstExperienceDiv {
-        margin-left: 10px;
-        margin-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -107,8 +107,8 @@
       }
     }
     .searchDiv {
-        margin-left: 10px;
-        margin-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -133,8 +133,8 @@
       }
     }
     .challengesDiv {
-        margin-left: 10px;
-        margin-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -158,6 +158,53 @@
         margin-top: 10px;
       }
     }
+  }
+}
 
+@media (max-width: 850px) {
+  .content {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+
+    .lowerSection {
+      display: flex !important;
+      flex-direction: column !important;
+      width: 350px;
+      .journeyDiv {
+        margin-bottom: 30px;
+      }
+      .firstExperienceDiv {
+        margin-bottom: 30px;
+      }
+      .searchDiv {
+        margin-bottom: 30px;
+      }
+    }
+
+    .leftDiv {
+      margin-right: unset !important;
+      margin-bottom: 20px;
+    }
+    .upperSection {
+      height: fit-content !important;
+      display: flex !important;
+      flex-direction: column !important;
+      width: 500px !important;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .upperSection {
+    border-bottom: none !important;
+  }
+  .rightDiv {
+    height: fit-content !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 200px !important;
+  }
+
+  .descriptionDiv{
+    width: 200px !important;
   }
 }

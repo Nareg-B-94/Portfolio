@@ -4,92 +4,107 @@
   background-color: #1a1a1a;
   color: #ffffff;
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
   align-items: center;
   font-size: 20px;
   padding-bottom: 120px;
-    h2{
-        font-size: 36px;
-        font-family: "Alegreya" !important;
+  h2 {
+    font-size: 36px;
+    font-family: "Alegreya" !important;
+  }
+
+  .skillCards {
+    font-family: "Alegreya" !important;
+    margin-top: 50px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+
+    .mainCard {
+      position: relative;
+      text-align: center;
+      align-items: center;
+
+      &:hover {
+        animation: myAnim3 300ms ease-in-out 0s 1 alternate forwards;
+
+        @keyframes myAnim3 {
+          0% {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            transform: scale(1);
+          }
+
+          100% {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0);
+            transform: scale(1.2);
+          }
+        }
+      }
     }
 
-    .skillCards{
-        font-family: "Alegreya" !important;
-        margin-top: 50px;
-        width: 800px;
+    .row {
+      margin-top: 50px;
+      justify-content: center;
+      display: flex;
 
-        .mainCard{
-            cursor: pointer;
-            position: relative;
-            text-align: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center !important;
+      align-items: center;
+    justify-content: center;
 
-            &:hover {
-                animation: myAnim3 300ms ease-in-out 0s 1 alternate forwards;
+      .descprition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        color: black;
+        margin: 20px;
+        height: 150px;
+        width: 220px;
+        background-color: white;
+        border-radius: 20px;
+      }
 
-                @keyframes myAnim3 {
-	0% {
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-		transform: scale(1);
-	}
+      .header {
+        top: 0px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        // background-color: #ffffff;
+        // padding: 20px;
+        box-shadow: 0px -1px 12px 17px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px -1px 12px 17px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -1px 12px 17px rgba(0, 0, 0, 0.75);
 
-	100% {
-		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0);
-		transform: scale(1.2);
-	}
+        img {
+            z-index: 2;
+          height: 40px;
+          width: 40px;
+          border-radius: 100%;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
 }
-            }
-        }
 
-        .row{
-            margin-top: 50px;
-            justify-content: center ;
-            display: flex;
-            align-items: center;
-
-            .descprition{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 100px;
-                color: black;
-                margin: 20px;
-                height: 150px;
-                width: 220px;
-                background-color: white;
-                border-radius: 20px;
-            }
-
-            .header{
-                top: -20px;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                height: 30px;
-                width: 30px;
-                border-radius:100% ;
-                background-color: #ffffff;
-                padding: 20px;
-                box-shadow: 0px -1px 12px 17px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px -1px 12px 17px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -1px 12px 17px rgba(0,0,0,0.75);
-
-
-                img {
-                    height: 40px;
-                    width: 40px;
-                }
-            }
-        }
-
+@media (max-width: 840px) {
+ .content{
+  .skillCards {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw !important;
+    .row{
+      max-width: 100vw !important;
     }
+ .mainCard{
+  display: flex;
+  justify-content: center;
+  max-width: 100vw!important;
+ }
+  }
+ }
+}
 
 
-
-
-    }
-
-//

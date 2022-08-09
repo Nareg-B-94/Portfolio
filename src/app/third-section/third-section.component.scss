@@ -1,5 +1,5 @@
 .content {
-    font-family: "Alegreya" !important;
+  font-family: "Alegreya" !important;
   color: white;
   min-height: 100vh;
   padding-top: 120px;
@@ -10,7 +10,7 @@
   align-items: center;
   .headline {
     h2 {
-        font-family: "Alegreya" !important;
+      font-family: "Alegreya" !important;
       font-size: 36px;
     }
 
@@ -24,30 +24,22 @@
   }
 
   .projectsDiv {
-
     height: 500px;
     width: 900px;
     display: flex;
     justify-content: center;
 
-
-
     .projectWrapper {
       display: flex;
       margin-top: 40px;
-      flex-direction: row !important;
-
+      flex-direction: row;
 
       .projectPic {
         margin-right: 50px;
 
-
-
         img {
           height: 350px;
           width: 450px;
-
-
         }
       }
     }
@@ -58,17 +50,17 @@
       align-items: flex-start;
       flex-direction: column;
 
-      .projectName{
+      .projectName {
         margin-top: 10px;
         font-size: 36px;
       }
 
-      .technologies{
+      .technologies {
         margin-top: 20px;
         font-size: 20px;
       }
 
-      .descriptionText{
+      .descriptionText {
         word-spacing: 2px;
         margin-top: 20px;
         font-size: 20px;
@@ -77,32 +69,95 @@
       .navigationButtons {
         margin-top: 20px;
 
-        button{
-            font-family: "Alegreya" !important;
-            height: 60px;
-            width: 250px;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            background-color: white;
-            color: #fa2759;
-            img {
-                margin-right: 10px;
-                height: 25px;
-            }
-            &:hover {
-                cursor: pointer;
-                    background-color: #fa2759;
-                    color: white;
-                }
+        button {
+          font-family: "Alegreya" !important;
+          height: 60px;
+          width: 250px;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          background-color: white;
+          color: #fa2759;
+          img {
+            margin-right: 10px;
+            height: 25px;
+          }
+          &:hover {
+            cursor: pointer;
+            background-color: #fa2759;
+            color: white;
+          }
         }
       }
     }
   }
 }
 
+@media (max-width: 850px) {
+  .projectPic {
+    img {
+      height: 250px !important;
+      width: 350px !important;
+    }
+  }
+  .headline {
+    span {
+      width: 350px !important;
+    }
+  }
 
+  .projectsDiv {
+    text-align: center;
+    height: fit-content !important;
+    width: 100vw !important;
 
+    .projectDescription{
+      text-align: center !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: unset !important;
+    }
 
+    .navigationButtons {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+      max-width: 350px;
+    }
+  }
+  .projectName {
+    text-align: center !important;
+      display: flex !important;
+      justify-content: center !important;
+    max-width: 350px !important;
+    margin-top: 20px !important;
+  }
+
+  .technologies {
+    max-width: 350px;
+    text-align: center !important;
+    text-align: center !important;
+      display: flex !important;
+      justify-content: center !important;
+  }
+
+  .descriptionText {
+    max-width: 350px;
+    text-align: center !important;
+  }
+
+  .projectWrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    // padding-left: 25px !important;
+    // padding-right: 25px !important;
+    .projectPic {
+      margin-right: unset !important;
+    }
+  }
+}

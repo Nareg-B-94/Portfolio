@@ -12,6 +12,8 @@ import { ThirdSectionComponent } from './third-section/third-section.component';
 import { FourthSectionComponent } from './fourth-section/fourth-section.component';
 import { FifthSectionComponent } from './fifth-section/fifth-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 
@@ -20,6 +22,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatMenuModule,
+    MatSidenavModule,
     BrowserAnimationsModule,
     MatToolbarModule,
 
