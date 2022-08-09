@@ -7,6 +7,10 @@
   justify-content: space-around;
   color: white;
   align-items: center;
+  a {
+    color: unset;
+    text-decoration: none;
+  }
 
   .leftDiv {
     width: 250px;

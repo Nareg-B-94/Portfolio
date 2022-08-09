@@ -8,9 +8,18 @@
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
+  a{
+
+    color: unset;
+    text-decoration: none;
+    &:hover {
+      color: black !important;
+      background-color: #2dfcd8;
+      cursor: pointer;
+    }
+  }
 
   button {
-    cursor: pointer;
     text-align: center;
     background-color: transparent;
     color: #2dfcd8;
@@ -23,7 +32,7 @@
     padding-left: 30px !important;
 
     &:hover {
-      color: black;
+      color: black !important;
       background-color: #2dfcd8;
     }
   }
