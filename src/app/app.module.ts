@@ -16,19 +16,36 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FirstSectionComponent, SecondSectionComponent, ThirdSectionComponent, FourthSectionComponent, FifthSectionComponent, FooterComponent, ImprintComponent, LegalNoticeComponent],
+  declarations: [
+    AppComponent,
+
+    HeaderComponent,
+    FirstSectionComponent,
+    SecondSectionComponent,
+    ThirdSectionComponent,
+    FourthSectionComponent,
+    FifthSectionComponent,
+    FooterComponent,
+    ImprintComponent,
+    LegalNoticeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     MatMenuModule,
     MatSidenavModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-
+    HttpClientModule,
+    FormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -8,6 +8,7 @@ const routes: Routes = [
   // { path: '', component: AppComponent },
   { path: 'imprint', component: ImprintComponent },
   { path: 'legal-notice', component: LegalNoticeComponent },
+
 ];
 
 @NgModule({

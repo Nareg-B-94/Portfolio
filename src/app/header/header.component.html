@@ -18,3 +18,17 @@
     </button>
   </div>
 </mat-toolbar>
+
+<div class="responsiveMenu">
+  <button mat-button [matMenuTriggerFor]="beforeMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <div class="linksRespo">
+      <a href="#firstSection"> ABOUT</a>
+      <a href="#secondSecetion"> SKILLS</a>
+      <a href="#thirdSection"> WORK </a>
+      <a href="#fifthSection"> CONTACT</a>
+    </div>
+  </mat-menu>
+</div>

@@ -12,8 +12,35 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {}
   goToImprint() {
     this.router.navigate(['/imprint']);
+
+    setTimeout(() => {
+      this.scrollToImprint();
+    }, 300);
+
   }
   goToLegal() {
     this.router.navigate(['/legal-notice']);
+
+    setTimeout(() => {
+      this.scrollToLegal();
+    }, 300);
+  }
+
+  scrollToImprint(){
+document.getElementById('imprint').scrollIntoView({
+  behavior: 'smooth',
+  block: 'start',
+  inline: 'nearest',
+});
+  }
+
+  scrollToLegal(){
+document.getElementById('legal').scrollIntoView({
+  behavior: 'smooth',
+  block: 'start',
+  inline: 'nearest',
+});
   }
 }
+
+

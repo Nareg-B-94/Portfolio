@@ -12,33 +12,49 @@
     </span>
   </div>
   <div class="formDiv">
-    <form action="">
+    <form [formGroup]="getform">
       <span data-aos="fade-right" data-aos-duration="2000">Name</span>
       <input
+
+        formControlName="name"
         data-aos="fade-left"
         data-aos-duration="2000"
         type="text"
         placeholder="Enter your name"
       />
+      <small *ngIf="getform.get('name').invalid && getform.get('name').touched"
+        >Name is Required (minimum length 3)</small
+      >
+
       <span data-aos="fade-right" data-aos-duration="2400">Email address</span>
       <input
+
+        formControlName="email"
         data-aos="fade-left"
         data-aos-duration="2400"
         type="email"
         placeholder="Enter your email address"
       />
+      <small *ngIf="getform.get('email').invalid && getform.get('email').touched"
+        >Email is Required with @ symbol </small
+      >
       <span data-aos="fade-right" data-aos-duration="2800">Message</span>
+
       <textarea
+
+        formControlName="message"
         data-aos="fade-left"
         data-aos-duration="2800"
         placeholder="Enter your message"
         name=""
         id=""
         cols="30"
-        rows="10"
-      ></textarea>
+        rows="10"></textarea>
+        <small *ngIf="getform.get('message').invalid && getform.get('message').touched"
+        >Message is Required (minimum length 10)</small>
+
       <div data-aos="fade-left" data-aos-duration="3000" class="buttoN">
-        <button>Send</button>
+        <button [disabled]="getform.invalid" (click)="submit()">Send</button>
       </div>
     </form>
   </div>
