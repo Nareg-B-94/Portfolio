@@ -12,7 +12,7 @@
     </span>
   </div>
   <div class="formDiv">
-    <form [formGroup]="getform">
+    <form (ngSubmit)="onSubmit()" [formGroup]="getform">
       <span data-aos="fade-right" data-aos-duration="2000">Name</span>
       <input
 
@@ -54,7 +54,7 @@
         >Message is Required (minimum length 10)</small>
 
       <div data-aos="fade-left" data-aos-duration="3000" class="buttoN">
-        <button [disabled]="getform.invalid" (click)="submit()">Send</button>
+        <button type="submit" >Send</button>
       </div>
     </form>
   </div>

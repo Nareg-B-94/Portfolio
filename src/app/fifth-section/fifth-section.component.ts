@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
-
-
 @Component({
   selector: 'app-fifth-section',
   templateUrl: './fifth-section.component.html',
@@ -24,7 +22,9 @@ export class FifthSectionComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.endPoint = 'https://sebastian-gamroth.developerakademie.net/portfolio/send_mail.php';
+    this.endPoint =
+      'https://nareg-berberian.com/Portfolio/send_mail.php';
+      // 'https://nareg-berberian.developerakademie.net/portfolio/send_mail.php';
     this.getform = new FormGroup({
       name: new FormControl(null, [
         Validators.required,
@@ -38,11 +38,19 @@ export class FifthSectionComponent implements OnInit {
     });
   }
 
+  onSubmit(): void {
+    if (this.getform.invalid) {
+      return;
+    }
+    this.submit();
+  }
+
   submit() {
     console.log(this.getform.value);
     this.toJSON = this.getform.value;
     this.toPHP();
     this.getform.reset();
+    alert('Thank you four your E-Mail');
   }
 
   toPHP() {

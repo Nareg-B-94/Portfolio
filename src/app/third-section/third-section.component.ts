@@ -13,30 +13,42 @@ export class ThirdSectionComponent implements OnInit {
   ngOnInit(): void {}
 
   goToPolloOnline() {
-    window.open('https://nareg-b-94.github.io/El-Pollo-Locco/');
+    window.open('https://nareg-berberian.com/projects/elpollolocco/index.html');
   }
 
   goToPolloGit() {
     window.open('https://github.com/Nareg-B-94/El-Pollo-Locco');
   }
 
-  goToKanbanOnline() {}
+  goToKanbanOnline() {
+    window.open('https://nareg-berberian.com/projects/kanban/#/');
+  }
 
-  goToKanbanGit() {}
+  goToKanbanGit() {
+    window.open('https://github.com/Nareg-B-94/Kanban-with-Angular');
+  }
 
-  goToRoFOnline() {}
+  goToRoFOnline() {
+    window.open('https://nareg-berberian.com/projects/rof/#/');
+  }
 
-  goToRoFGit() {}
+  goToRoFGit() {
+    window.open('https://github.com/Nareg-B-94/Ring-of-Fire-v2');
+  }
 
   goToQuandlOnline() {
-    window.open('https://nareg-b-94.github.io/BitCoin-currency-Projekt/');
+    window.open('https://nareg-berberian.com/projects/bitcoin/index.html');
   }
 
   goToQuandlGit() {
     window.open('https://github.com/Nareg-B-94/BitCoin-currency-Projekt');
   }
 
-  goToCrmOnline() {}
+  goToCrmOnline() {
+    window.open('https://nareg-berberian.com/projects/simplecrm/');
+  }
 
-  goToCrmGit() {}
+  goToCrmGit() {
+    window.open('https://github.com/Nareg-B-94/simple-CRM');
+  }
 }
