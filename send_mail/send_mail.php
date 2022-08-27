@@ -1,5 +1,9 @@
 <?php
 
+
+$recipient = 'naregb94@gmail.com';
+
+
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
         header("Access-Control-Allow-Origin: *");
@@ -21,14 +25,14 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $subject = "Contact From " . $_POST['name'];
         $headers = "From: $name <$email>";
 
-	$recipient = 'naregb94@gmail.com';
-	$redirect = 'success';
+
+	// $redirect = 'success';
 
         mail($recipient, $subject, $message, $headers);
-        header("Location: " . $redirect);
+        header("Location: ");
 
         break;
-    default: //Reject any non POST or OPTIONS requests.
+        default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);
         exit;
 }

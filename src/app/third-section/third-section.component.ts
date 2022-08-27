@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-third-section',
@@ -10,7 +11,9 @@ export class ThirdSectionComponent implements OnInit {
   private router: Router;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+     AOS.init();
+  }
 
   goToPolloOnline() {
     window.open('https://nareg-berberian.com/projects/elpollolocco/index.html');

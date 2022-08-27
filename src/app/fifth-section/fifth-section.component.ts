@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-fifth-section',
@@ -22,9 +23,11 @@ export class FifthSectionComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
+    AOS.init();
+
     this.endPoint =
-      'https://nareg-berberian.com/Portfolio/send_mail.php';
-      // 'https://nareg-berberian.developerakademie.net/portfolio/send_mail.php';
+      // 'https://nareg-berberian.com/Portfolio/send_mail.php';
+      'https://nareg-berberian.developerakademie.net/Portfolio/send_mail.php';
     this.getform = new FormGroup({
       name: new FormControl(null, [
         Validators.required,

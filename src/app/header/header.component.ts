@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatMenuModule } from '@angular/material/menu';
+import AOS from 'aos';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,5 +10,7 @@ export class HeaderComponent implements OnInit {
   showFiller = false;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+     AOS.init();
+  }
 }

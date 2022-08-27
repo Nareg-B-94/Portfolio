@@ -37,6 +37,7 @@
     }
   }
   .rightDiv {
+    opacity: 0;
   background-image: url("/assets/img/TSF_0355.jpg");
   border-bottom-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -48,6 +49,7 @@
   object-fit: cover;
   background-size: cover;
   background-position: center top;
+  animation: myAnim 1s ease-in-out 1.5s 1 normal forwards;
 }
 .leftDiv {
   opacity: 0;
